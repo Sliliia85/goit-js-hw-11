@@ -19,8 +19,8 @@ export async function getImagesByQuery(query) {
    
     return response.data;
   } catch (error) {
-    console.error('Error fetching images:', `Sorry, there are no images matching your search query. Please try again!
-    `, error);
+    console.error('Error fetching images:', `Sorry, there are no images matching your search query. Please try again!`, error.message,
+    );
     throw error;
   }
 }
